@@ -1,0 +1,43 @@
+﻿body{
+    padding-left:100px;
+    padding-right:100px;
+    font-size:medium;
+}
+.box
+{
+    height:430px;
+    width:1200px;
+    overflow:auto;
+}
+.menu{
+    background-color:green;
+    color:yellow;
+    text-decoration:none;
+    box-sizing:border-box;
+    margin:0px;
+    padding:15px 25px; 
+    border-radius:15px;
+}
+.menu:hover{
+    background-color:yellow;
+    color:red;
+}
+.loginbuttons
+{ 
+    height:100%;
+    background-color:lightgreen;
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+    text-decoration:none;
+    border-width:thin;
+    padding:10px 35px 10px 35px;
+    border-radius:20px;
+        }
+.loginbuttons:hover
+{
+    color:green;
+    background-color:w;
+    border-color:green;
+    border-style:solid;
+}

@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="mastercss.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="file/logo2.png">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body{
+            margin-left:-2px;
+            margin-top:-2px;
+            margin-right:-2px;
+        }
+        .content{
+            margin-left:-2px;
+            margin-top:-2px;
+            margin-right:-2px;
+        }
+        .auto-style1 {
+            width: 100%;
+            border-style: none;
+            border-width: 0px;
+        }
+        .auto-style3 {
+            background-color:aquamarine ;
+            margin-left:2px;
+            margin-top:2px;
+            margin-right:-2px;
+            height: 55px;
+            
+            overflow:auto;
+            text-align: left;
+        }
+        .auto-style4 {
+            height: 90px;
+            background-color: #99CCFF;
+            text-align:center;
+        }
+        #menu
+    { width:1000px;
+      text-decoration-color:white;
+    height:40px;
+    border:solid 0px red;
+    margin:0 auto; margin-bottom:5px;
+        
+        }
+        .auto-style5 {
+            margin-top=0px;
+            background-color: #99CCFF;
+            height: 46px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td  style="font-size: xx-large; font-weight: 700; text-decoration: underline"  class="auto-style4" >
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/file/logo1.png" ImageAlign="Left" Width="84px" Height="60px" />
+                    Online Attendence Seat</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx" Style="font-weight: 700; font-size: x-large" CssClass="menu">Home</asp:HyperLink>
+
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/login.aspx" Style="font-size: x-large; font-weight: 700" CssClass="menu">Login</asp:HyperLink>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="content">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; font-size: xx-large; font-weight: 700; text-decoration: underline" class="auto-style5">Footer</td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
